@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React-Section</title>
+    <!-- Boot-Css  -->
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/index.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/phone.css">
+    <!-- Boot - Js  -->
+    <script src="./bootstrap-4.6.2-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/index.js"></script>
+</head>
+
+<body>
+    <!----------------------- NavBar  ------------------------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger" style="position: sticky; top: 0; z-index: 1000;">
+        <a class="navbar-brand text-light" href="#">SPEEDUP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto float-right">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#cont1">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#cont2">Services <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Syllabas
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">MERN</a>
+                        <a class="dropdown-item" href="#syllabas#react">REACT</a>
+                        <a class="dropdown-item" href="#">BACKEND</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="button">Get Started</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- ****************************************************** CONTAINER 1 ***************************************************************** -->
+    <div class="container-fluid m-0 ">
+        <div class="row">
+            <div class="col-sm p-3">
+                <h1 style="text-align: center;color: white; background-color: black; padding: 2px 3px;">JavaScript</h1>
+                <div class="accordion" id="accordionExample">
+
+                    <!-- TAGS -->
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h5>Module - 1 : DataTypes, Variables, Operators</h5>
+                                </button>
+                            </h2>
+                        </div>
+
+                        <!-- multi-collapse - 1  -->
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                    Videos
+                                </a>
+
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                    Notes
+                                </a>
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                            <div class="card card-body">
+                                                Some placeholder content for the first collapse component of this
+                                                multi-collapse example. This panel is hidden by default but revealed
+                                                when the user activates the relevant trigger.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                            <div class="card card-body">
+                                                Some placeholder content for the second collapse component of this
+                                                multi-collapse example. This panel is hidden by default but revealed
+                                                when the user activates the relevant trigger.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- multi-collapse - 2  -->
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample3"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                    Q & A
+                                </a>
+
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample4"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                    MCQ Test
+                                </a>
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                            <div class="card card-body">
+                                                Some placeholder content for the first collapse component of this
+                                                multi-collapse example. This panel is hidden by default but revealed
+                                                when the user activates the relevant trigger.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample4">
+                                            <div class="card card-body">
+                                                Some placeholder content for the second collapse component of this
+                                                multi-collapse example. This panel is hidden by default but revealed
+                                                when the user activates the relevant trigger.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FORMS -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <h5>Module - 2 : Conditions, Looping, Functoins</h5>
+                                </button>
+                            </h2>
+                        </div>
+
+                        <!-- multi-collapse-1  -->
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+
+
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                    Videos
+                                </a>
+
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                    Notes
+                                </a>
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                            <div class="card card-body">
+                                                Some placeholder content for the first collapse component of this
+                                                multi-collapse example. This panel is hidden by default but revealed
+                                                when the user activates the relevant trigger.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                            <div class="card card-body">
+                                                Some placeholder content for the second collapse component of this
+                                                multi-collapse example. This panel is hidden by default but revealed
+                                                when the user activates the relevant trigger.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- multi-collapse-2  -->
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+
+
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample3"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                    Videos
+                                </a>
+
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample4"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                    Notes
+                                </a>
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                            <div class="card card-body">
+                                                Some placeholder content for the first collapse component of this
+                                                multi-collapse example. This panel is hidden by default but revealed
+                                                when the user activates the relevant trigger.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample4">
+                                            <div class="card card-body">
+                                                Some placeholder content for the second collapse component of this
+                                                multi-collapse example. This panel is hidden by default but revealed
+                                                when the user activates the relevant trigger.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ELEMENTS -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <h5>Module - 3 : Array, Object, Methods</h5>
+                                </button>
+                            </h2>
+                        </div>
+
+                        <!-- div-1  -->
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <!-- multi-collapse -->
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                    Videos
+                                </a>
+
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                    Notes
+                                </a>
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                            <div class="card card-body">
+                                                Some placeholder content for the first collapse component of this
+                                                multi-collapse example. This panel is hidden by default but revealed
+                                                when the user activates the relevant trigger.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                            <div class="card card-body">
+                                                Some placeholder content for the second collapse component of this
+                                                multi-collapse example. This panel is hidden by default but revealed
+                                                when the user activates the relevant trigger.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- div-2  -->
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <!-- multi-collapse2 -->
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample3"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                    Q & A
+                                </a>
+
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample4"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                    MCQ Test
+                                </a>
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                            <div class="card card-body">
+                                                Some placeholder content for the first collapse component of this
+                                                multi-collapse example. This panel is hidden by default but revealed
+                                                when the user activates the relevant trigger.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample4">
+                                            <div class="card card-body">
+                                                Some placeholder content for the second collapse component of this
+                                                multi-collapse example. This panel is hidden by default but revealed
+                                                when the user activates the relevant trigger.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ************************************** FOOTER *********************************************************************************** -->
+
+    <div class="container-fluid m-0 footer footer-2 mt-5">
+        <div class="row">
+            <div class="col-sm d-flex  bg-danger" style=" padding: 9px 6px;
+            justify-content: space-around;">
+                <a href=""><img src="./images/messages.png" alt=""></a>
+                <a href=""><img src="./images/person.png" alt="" style="width: 50px;"></a>
+                <a href=""><img src="./images/notifi.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

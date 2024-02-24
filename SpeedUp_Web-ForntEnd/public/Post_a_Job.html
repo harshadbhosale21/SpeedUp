@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Boot-Css  -->
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/index.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/phone.css">
+    <!-- Boot - Js  -->
+    <script src="./bootstrap-4.6.2-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <!----------------------- NavBar  ------------------------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger" style="position: sticky; top: 0; z-index: 1000;">
+        <a class="navbar-brand text-light" href="#">SPEEDUP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto float-right">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#cont1">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#cont2">Services <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Syllabas
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">MERN</a>
+                        <a class="dropdown-item" href="#syllabas#react">REACT</a>
+                        <a class="dropdown-item" href="#">BACKEND</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="./Callwise_Status.html">Go Back</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="button">Get Started</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="post" style="background-color: #F5F9FF; width: 100%; height: 100vh;">
+        <form action="">
+            <fieldset>
+                <label for=""
+                    style="margin-left: 3%; margin-top: 3%; color: #DC3545; font-size: 20px; font-weight: 600;">Company
+                    name:</label>
+                <input type="text" name="cname" id="cname">
+                <br><br>
+                <label for="" style="margin-left: 3%; color: #DC3545; font-size: 20px; font-weight: 600;">Job
+                    Description:</label>
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+                <br><br>
+                <label for="" style="margin-left: 3%; color: #DC3545; font-size: 20px; font-weight: 600;">Apply
+                    Timeline:</label>
+                <input type="text" name="time" id="time">
+                <br><br>
+                <!-- <legend>Course Completion Status:</legend> -->
+                <!-- <label for="" style="margin-left: 3%; color: #DC3545; font-size: 20px; font-weight: 600;">Course Completion Status:</label> -->
+                <label for="" style="color:#DC3545;font-size: 20px; font-weight: 600; margin-left: 3%;">Course:</label>
+                <select name="" id="">
+                    <option value="React">React</option>
+                    <option value="MERN">MERN</option>
+                    <option value="Backend">Backend</option>
+                </select>
+                <br><br>
+                <label for="" style="color:#DC3545;font-size: 20px; font-weight: 600; margin-left: 3%;">Course
+                    Completion Status:</label>
+                <input type="range" name="" id="">
+                <br><br>
+                <label for="" style="color:#DC3545;font-size: 20px; font-weight: 600; margin-left: 3%;">Stream:</label>
+                <select name="" id="">
+                    <option value="select">_Select_</option>
+                    <option value="IT,COM,E&TC">IT,COM,E&TC</option>
+                    <option value="IT/COM">IT/COM</option>
+                    <option value="IT,COM,E&TC,BCA,BCS,MCS">IT,COM,E&TC,BCA,BCS,MCS</option>
+                    <option value="Any">Any</option>
+                </select>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

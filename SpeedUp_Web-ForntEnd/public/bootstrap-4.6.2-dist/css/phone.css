@@ -1,0 +1,17 @@
+@media only screen And (max-width: 600px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .cont1-col2 {
+        font-size: 65px;
+    }
+
+    .cont2-heading {
+        font-size: 40px;
+    }
+
+    .col_1-heading {
+        padding: 2px 3px;
+    }
+}

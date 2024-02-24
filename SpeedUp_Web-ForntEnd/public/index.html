@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <!-- Boot-Css  -->
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/index.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/phone.css">
+    <!-- Boot - Js  -->
+    <script src="./bootstrap-4.6.2-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/index.js"></script>
+</head>
+
+<body>
+
+
+    <main>
+        <!----------------------- NavBar  ------------------------>
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger" style="position: sticky; top: 0; z-index: 1000;">
+            <a class="navbar-brand text-light" href="#">SPEEDUP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto float-right">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#cont1">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#cont2">Services <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Syllabas
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">MERN</a>
+                            <a class="dropdown-item" href="#syllabas#react">REACT</a>
+                            <a class="dropdown-item" href="#">BACKEND</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="button">Get Started</button>
+                </form>
+            </div>
+        </nav>
+
+        <!----------------------- Container-1  ------------------------>
+
+        <div class="container-fluid m-0 container-1 py-3" id="cont1">
+            <div class="row align-items-center">
+                <div class="col-sm col-cont1">
+                    <div class="col_1-heading">
+                        <h1 class="text-center text-light">SPEED<span style="color: red;">UP</span></h1>
+                        <p class="text-center text-light">INFOTECH</p>
+
+                    </div>
+                </div>
+                <div class="col-sm col-cont1">
+                    <h1 class="text-center text-danger p-4 cont1-col2  cont1-head">Welcome
+                    </h1>
+                    <h4 class="text-center text-danger p-3 cont1-para">Building Your Empire with Speedup Infotech</h4>
+                    <div class="cont1-btn">
+
+                        <button class="btn-lg btn-outline-danger m-1" type="button" data-toggle="modal"
+                            data-target="#login">Login</button>
+                        <!-- Modal for login  -->
+                        <div class="modal fade" id="login">
+                            <div class="modal-dialog  modal-dialog-centered">
+                                <div class="modal-content">
+
+                                    <div class=" modal-header bg-light">
+                                        <h5 class="modal-title text-danger" id="exampleModalLabel">HELLO!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput text-danger">Username</label>
+                                                <input type="text" class="form-control mb-2" id="formGroupExampleInput"
+                                                    placeholder="Enter Username">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput2 text-danger">Password</label>
+                                                <input type="text" class="form-control mb-2" id="formGroupExampleInput2"
+                                                    placeholder="Enter Password">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-danger d-block m-auto">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Registration Button  -->
+                        <button class="btn-lg btn-danger m-1" data-toggle="modal" data-target="#Reg">Register</button>
+
+                        <!------------------- MODAL-Registration  -------------------------->
+                        <div class="modal fade" id="Reg">
+                            <div class="modal-dialog  modal-dialog-centered">
+                                <!-- Modal-content  -->
+                                <div class="modal-content" id="modal-content">
+                                    <!-- Header  -->
+                                    <div class=" modal-header bg-danger">
+                                        <h5 class="modal-title text-light" id="exampleModalLabel">CREATE USER</h5>
+                                        <button type="button" class="close text-light" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <!-- Body -->
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <label for="formGroupExampleInput2 text-danger fname">first
+                                                            name</label>
+                                                        <input type="text" class="form-control mb-2"
+                                                            placeholder="First name" id="fname" name="fname">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="formGroupExampleInput2 text-danger Mname">middle
+                                                            name</label>
+                                                        <input type="text" class="form-control" placeholder="Last name"
+                                                            id="Mname" name="Mname">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="formGroupExampleInput2 text-danger lname">last
+                                                            name</label>
+                                                        <input type="text" class="form-control" placeholder="Last name"
+                                                            id="lname" name="lname">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-2">
+                                                <label for="formGroupExampleInput2 text-danger email">Email ID</label>
+                                                <input type="text" class="form-control mb-2"
+                                                    placeholder="Enter Password" id="email" name="email">
+                                            </div>
+                                            <div class="form-group m-2">
+                                                <label for="formGroupExampleInput2 text-danger number">Mobile
+                                                    NO.</label>
+                                                <input type="text" class="form-control mb-2" id="number" name="number"
+                                                    placeholder="Enter Password">
+                                            </div>
+                                            <div class="form-group m-2">
+                                                <label for="formGroupExampleInput2 text-danger number">Birth
+                                                    Date</label>
+                                                <input type="date" class="form-control mb-2" id="date" name="date"
+                                                    placeholder="Enter Password">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <!-- Footer -->
+                                    <div class="modal-footer ">
+                                        <!-- Generate-Button  -->
+                                        <button type="button" class="btn btn-danger d-block m-auto" data-toggle="modal"
+                                            data-target="#generate" id="generateId" onclick="createUserId()">Generate ID
+                                        </button>
+
+                                        <!------------------- MODAL- GenerateID  -------------------------->
+                                        <div class="modal fade" id="generate">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-success">
+                                                        <h5 class="modal-title text-light" id="exampleModalLabel">
+                                                            Account
+                                                            Created
+                                                        </h5>
+                                                        <button type="button" class="close text-light"
+                                                            data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body ">
+                                                        <div class="input-group input-group-sm mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"
+                                                                    id="inputGroup-sizing-sm">User-Id</span>
+                                                            </div>
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Sizing example input"
+                                                                aria-describedby="inputGroup-sizing-sm" id="userId">
+                                                        </div>
+                                                        <div class="input-group input-group-sm mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"
+                                                                    id="inputGroup-sizing-sm">Password</span>
+                                                            </div>
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Sizing example input"
+                                                                aria-describedby="inputGroup-sizing-sm" id="Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer bg-secondary">
+                                                        <button class="btn btn-primary" data-dismiss="modal">OK</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!------------------- MODAL-GenerateID  -------------------------->
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------- Container-2  ------------------------>
+        <div class="container-fluid m-0 container-2 p-0" id="cont2">
+            <div class="row" style="padding: 0; width: 100%;">
+                <div class="col-sm">
+                    <h1 class="text-center text-danger cont2-heading">OUR SERVICES</h1>
+                </div>
+            </div>
+            <div class="container-fluid m-0">
+                <div class="row">
+                    <!-- first-Column  -->
+                    <div class="col-sm cont2-col">
+                        <!-- Syllabas-Button  -->
+                        <button type="button" class="btn-lg btn-block" id="syllabus" type="button"
+                            data-toggle="collapse" data-target="#Syllabas" aria-expanded="false"
+                            aria-controls="collapseExample"><img src="" alt="">Syllabas
+                        </button>
+
+                        <!-- Syllabas-Colapse  -->
+                        <div class="collapse  collapse-container" id="Syllabas">
+                            <div style="margin: 10px 0;">
+                                <button class="btn btn-danger btn-lg btn-block d-block m-auto my-2" type="button"
+                                    data-toggle="collapse" data-target="#react" aria-expanded="false"
+                                    aria-controls="collapseExample">REACT
+                                </button>
+
+                                <!-- React-Colapse  -->
+                                <div class="collapse px-5" id="react" style="margin: 10px 0;">
+                                    <button class="btn-lg btn-block btn-primary" onclick="navigateHtml()">HTML</button>
+                                </div>
+                                <div class="collapse px-5" id="react" style="margin: 10px 0;">
+                                    <button class="btn-lg btn-block btn-primary"
+                                        onclick="navigateJS()">JavaScript</button>
+                                </div>
+                                <div class="collapse px-5" id="react" style="margin: 10px 0;">
+                                    <button class="btn-lg btn-block btn-primary"
+                                        onclick="navigateREACT()">ReactJS</button>
+                                </div>
+                            </div>
+                            <div style="margin: 10px 0;">
+                                <button class="btn btn-danger btn-lg btn-block d-block m-auto my-2" type="button"
+                                    data-toggle="collapse" data-target="#mern" aria-expanded="false"
+                                    aria-controls="collapseExample">MERN</button>
+
+                                <!-- MERN-Colapse  -->
+                                <div class="collapse px-5" id="mern" style="margin: 10px 0;">
+                                    <button class="btn-lg btn-block btn-primary" onclick="navigateHtml()">Front-end:
+                                        Html,Css,BootSTrap,React</button>
+                                </div>
+                                <div class="collapse px-5" id="mern" style="margin: 10px 0;">
+                                    <button class="btn-lg btn-block btn-primary" onclick="navigateJS()">Backend:
+                                        JavaScript,NodeJS,Expresss</button>
+                                </div>
+                                <div class="collapse px-5" id="mern" style="margin: 10px 0;">
+                                    <button class="btn-lg btn-block btn-primary" onclick="navigateREACT()">Database:
+                                        MongoDB,Mongoose</button>
+                                </div>
+                            </div>
+                            <div style="margin: 10px 0;">
+                                <button class="btn btn-danger btn-lg btn-block d-block m-auto my-2" type="button"
+                                    data-toggle="collapse" data-target="#backend" aria-expanded="false"
+                                    aria-controls="collapseExample">BACKEND</button>
+
+                                <!-- BACKEND-Colapse  -->
+                                <div class="collapse px-5" id="backend" style="margin: 10px 0;">
+                                    <button class="btn-lg btn-block btn-primary" onclick="navigateHtml()">JavaScript
+                                    </button>
+                                </div>
+                                <div class="collapse px-5" id="backend" style="margin: 10px 0;">
+                                    <button class="btn-lg btn-block btn-primary"
+                                        onclick="navigateJS()">NodeJS,Expresss</button>
+                                </div>
+                                <div class="collapse px-5" id="backend" style="margin: 10px 0;">
+                                    <button class="btn-lg btn-block btn-primary" onclick="navigateREACT()">Database:
+                                        MongoDB,Mongoose</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second-Column  -->
+                    <div class="col-sm cont2-col">
+                        <button type="button" class="btn-lg btn-block" type="button" data-toggle="collapse"
+                            data-target="#Mock" aria-expanded="false" aria-controls="collapseExample"><img src=""
+                                alt="">Mock
+                        </button>
+
+                        <!-- Mock-Colapse  -->
+                        <div class="collapse" id="Mock">
+                            <div style="margin: 10px 0;">
+                                <button class="btn btn-danger btn-lg btn-block d-block m-auto my-2"
+                                    onclick="navigateMock()">Take Mock Test
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third-Column  -->
+                    <div class="col-sm cont2-col">
+                        <button type="button" class="btn-lg btn-block" type="button" data-toggle="collapse"
+                            data-target="#PlaceCell" aria-expanded="false" aria-controls="collapseExample"><img src=""
+                                alt="">Placement Calls
+                        </button>
+
+                        <!-- PlaceCell-Colapse  -->
+                        <div class="collapse" id="PlaceCell">
+                            <div style="margin: 10px 0;">
+                                <button class="btn btn-danger btn-lg btn-block d-block m-auto my-2" type="button"
+                                    data-toggle="collapse" data-target="#totalcalls" aria-expanded="false"
+                                    aria-controls="collapseExample" onclick="navigateTechMH()">Total
+                                    Calls
+                                </button>
+
+                            </div>
+                            <div style="margin: 10px 0;">
+                                <button class="btn btn-danger btn-lg btn-block d-block m-auto my-2" type="button"
+                                    data-toggle="collapse" data-target="#Applied" aria-expanded="false"
+                                    aria-controls="collapseExample" onclick="navigateApplied()">Applied
+                                    calls
+                                </button>
+                            </div>
+                            <div style="margin: 10px 0;">
+                                <button class="btn btn-danger btn-lg btn-block d-block m-auto my-2"
+                                    onclick="navigateShort()">Shortlisted</button>
+                            </div>
+                            <div style="margin: 10px 0;">
+                                <button class="btn btn-danger btn-lg btn-block d-block m-auto my-2"
+                                    onclick="navigateShortButNotAttend()">Shortlisted but
+                                    not
+                                    attended</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid m-0 footer mt-5">
+                <div class="row">
+                    <div class="col-sm d-flex  bg-danger" style=" padding: 9px 6px;
+                justify-content: space-around;">
+                        <a href="./message.html"><img src="./images/messages.png" alt=""></a>
+                        <a href="./Dashboard.html"><img src="./images/person.png" alt="" style="width: 50px;"></a>
+                        <a href=""><img src="./images/notifi.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+</body>
+
+</html>
